@@ -1,0 +1,56 @@
+Lab: Dynamic Data Transformation Pipeline for Real-Time Retail Analytics
+📘 Problem Statement:
+You are working as a Data Engineer in a Retail Analytics team. Your task is to build a dynamic and configurable data transformation engine that can apply a sequence of user-defined operations (functions) to a real-time stream of product sales data using functional programming constructs and advanced function arguments.
+Objectives:
+Apply lambda functions for dynamic data transformation
+
+Use map, filter, and reduce for streaming transformations
+
+Use arbitrary arguments (*args, **kwargs) to allow flexible function definitions
+
+Use positional-only and keyword-only arguments for cleaner and controlled function signatures
+
+Build a reusable transformation pipeline
+
+🛠️ Tasks to Implement:
+🔹 1. Create a Transformation Engine
+Accept arbitrary transformation functions using *args
+
+Each transformation must be applied using map, filter, or reduce
+
+Use lambda for defining short inline transformations
+
+🔹 2. Implement Filters Based on Custom Rules
+Create filter functions that use **kwargs to dynamically filter products (e.g., price > X, category == Y)
+
+Use keyword-only arguments to ensure filters are clearly defined
+
+🔹 3. Apply Discounts or Taxes Using Lambda & Map
+Apply a discount rule using map and lambda
+
+Rules should accept both positional-only and keyword-only arguments
+
+🔹 4. Summarize Total Revenue Using Reduce
+Use reduce to compute:
+
+Total sales revenue
+
+Revenue per category (optional with groupby-like logic)
+
+🔹 5. Build a Function Pipeline
+Allow users to plug in any number of transformation steps
+
+Maintain order and flexibility using a pipeline-style function with *args
+📊 Expected Output:
+Transformed data (after all operations)
+
+Summary: Total revenue, high-value transactions, category-wise breakdown
+
+Log of operations performed
+
+🚀 Real-World Simulation Goals:
+Mimics real-time data pipelines
+
+Encourages abstraction and reusability
+
+Uses Pythonic and functional idioms for clarity and performance
